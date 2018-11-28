@@ -15,6 +15,11 @@
   float:left;
 }
 
+.filtertitle{
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*###########SIDE NAV#####################################################################*/
 
 /* The sidebar menu */
@@ -41,7 +46,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #0032a0;
 }
 
 /* Style page content */
@@ -107,6 +112,9 @@
   width: 490px;
   display: block;
   margin: 0 auto;
+  float:left;
+  padding-top: 10px;
+  
 }
 
 input#search-bar{
