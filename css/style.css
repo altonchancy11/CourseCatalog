@@ -2,6 +2,7 @@
 .titleline{
   display: inline;
   font-size: 45px;
+  font-family: Poppins;
 }
 
 .topline{
@@ -18,6 +19,7 @@
 .filtertitle{
   text-align: center;
   text-decoration: underline;
+  font-family: Poppins;
 }
 
 /*###########CLASS CARDS#################################################################*/
