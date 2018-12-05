@@ -24,21 +24,27 @@
   <div class="sidenav">
     <img src="Images/myuk.png" height="100px" alt="My U K">
     <h3 class="filtertitle">Filters<h3>
-    <a href="#">Department</a>
+    <a id="department_menu" href="#">Department</a>
+    <ul id="department_list" class="start_hidden" style="list-style-type:none"> <!--Collapsible jquery -->
+      <li><a href="#" class="SAVSbutton" onclick="FilterSavsDept()">SAVS</a></li>
+      <li>Gatton School of Business</li>
+      <li>College of Education</li>
+      <li>College of Health Sciences</li>
+    </ul>
     <a href="#">Major</a>
     <a href="#">Minor</a>
 
-<!--Collapsible jquery -->
 
-  <a id=uk_core href="#">UK Core</a>
-  <ul id="core_list" class="start_hidden" style="list-style-type:none">
-    <li>Arts & Creativity</li>
-    <li>Humanities</li>
-    <li>Social Sciences</li>
-    <li> Composition and Communication I</li>
-    <li>Composition and Communication II</li>
-    <li>Quantitative Foundations</li>
-  </ul>
+
+    <a id=uk_core href="#">UK Core</a>
+    <ul id="core_list" class="start_hidden" style="list-style-type:none"> <!--Collapsible jquery -->
+      <li>Arts & Creativity</li>
+      <li>Humanities</li>
+      <li>Social Sciences</li>
+      <li>Composition and Communication I</li>
+      <li>Composition and Communication II</li>
+      <li>Quantitative Foundations</li>
+    </ul>
 
 
     <a href="#" class="300button" onclick="Filter300Plus()">300+ Level</a>
@@ -192,7 +198,7 @@
        </div>
      </div>
 
-     <div class="classcard A-S306">
+     <div class="classcard A-S306 SAVS">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-S 306 </div>
@@ -232,7 +238,7 @@
        </div>
      </div>
 
-     <div class="classcard A-S386">
+     <div class="classcard A-S386 SAVS">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-S 386 </div>
@@ -272,7 +278,7 @@
        </div>
      </div>
 
-     <div class="classcard A-S547">
+     <div class="classcard A-S547 SAVS">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-S 547 </div>
