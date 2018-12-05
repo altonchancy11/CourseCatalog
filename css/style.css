@@ -22,6 +22,10 @@
   font-family: Poppins;
 }
 
+/* jquery toggle*/
+.start_hidden {display: none;}
+
+
 /*###########CLASS CARDS#################################################################*/
 .classcard{
   clear: both;
