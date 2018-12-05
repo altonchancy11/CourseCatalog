@@ -15,17 +15,9 @@
   <link href="css/style.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-  <script>
-  $(document).ready(function(){
-    $("#uk_core").click(function(){
-      $("#core_list").toggle();
-    });
-  });
-  </script>
-
+  <script src="ourScripts.js"></script>
 </head>
+
 <body>
 
   <!-- Side Filter Menu -->
@@ -49,7 +41,7 @@
   </ul>
 
 
-    <a href="#">300+ Level</a>
+    <a href="#" class="300button" onclick="Filter300Plus()">300+ Level</a>
     <a href="#">What's New</a>
     <a href="#">Variable Credit</a>
     <a href="#">Part-of-Term</a>
@@ -80,7 +72,7 @@
 
 
 
-     <div class="classcard A-H101">
+     <div class="classcard A-H101 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
@@ -840,7 +832,7 @@
        </div>
      </div>
 
-     <div class="classcard CLA100">
+     <div class="classcard CLA100 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
@@ -1040,7 +1032,7 @@
        </div>
      </div>
 
-     <div class="classcard CPH202">
+     <div class="classcard CPH202 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">CPH202 </div>
@@ -1280,7 +1272,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG130">
+     <div class="classcard ENG130 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG130</div>
@@ -1320,7 +1312,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG180">
+     <div class="classcard ENG180 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG180 </div>
@@ -1360,7 +1352,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG280">
+     <div class="classcard ENG280 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG280 </div>
@@ -1400,7 +1392,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG284">
+     <div class="classcard ENG284 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG284 </div>
@@ -1440,7 +1432,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG285">
+     <div class="classcard ENG285 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG285 </div>
@@ -1560,7 +1552,7 @@
        </div>
      </div>
 
-     <div class="classcard FR103">
+     <div class="classcard FR103 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">FR103 </div>
@@ -1600,7 +1592,7 @@
        </div>
      </div>
 
-     <div class="classcard FR225">
+     <div class="classcard FR225 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">FR225</div>
@@ -1680,7 +1672,7 @@
        </div>
      </div>
 
-     <div class="classcard GER104">
+     <div class="classcard GER104 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
@@ -1760,7 +1752,7 @@
        </div>
      </div>
 
-     <div class="classcard GRN250">
+     <div class="classcard GRN250 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
@@ -1880,7 +1872,7 @@
        </div>
      </div>
 
-     <div class="classcard HON151">
+     <div class="classcard HON151 lessthan300">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
