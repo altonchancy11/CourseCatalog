@@ -26,7 +26,10 @@
   max-height: 15px;
   display: inline-block;
 }
-
+.clearbutton{
+   color:red;
+   font-size: 12px;
+}
 
 /* jquery toggle*/
 .start_hidden {display: none;}

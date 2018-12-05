@@ -24,6 +24,7 @@
   <div class="sidenav">
     <img src="Images/myuk.png" height="100px" alt="My U K">
     <h3 class="filtertitle">Filters<h3>
+
     <a id="department_menu" onclick="DeptIconSwap()" href="#">Department <img src="Images/add.png" class="dept_icon iconclue"></a>
     <ul id="department_list" class="start_hidden" style="list-style-type:none"> <!--Collapsible jquery -->
       <li><a href="#" class="filterbutton SAVSbutton" onclick="FilterSavsDept()">SAVS</a></li>
@@ -33,9 +34,6 @@
     </ul>
     <a href="#">My Major</a>
     <a href="#">My Minor</a>
-
-
-
     <a id=uk_core onclick="CoreIconSwap()" href="#">UK Core <img src="Images/add.png" class="core_icon iconclue"></a>
     <ul id="core_list" class="start_hidden" style="list-style-type:none"> <!--Collapsible jquery -->
       <li><a class="" href="#" role="button">Arts & Creativity</a></li>
@@ -45,13 +43,12 @@
       <li><a class="" href="#" role="button">Composition and Communication II</a></li>
       <li><a class="" href="#" role="button">Quantitative Foundations</a></li>
     </ul>
-
-
     <a href="#" class="filterbutton 300button" onclick="Filter300Plus()">300+ Level</a>
     <a href="#">What's New</a>
     <a href="#">Variable Credit</a>
     <a href="#">Part-of-Term</a>
     <a href="#">Online</a>
+    <button href="#" class="filterbutton clearbutton" onclick="Unfilter()">Clear Filters</button>
   </div>
 
   <!-- Page content -->

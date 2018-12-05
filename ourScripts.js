@@ -18,6 +18,11 @@ $(document).ready(function(){
   });
 });
 
+var Unfilter = function(){
+  $('.classcard').show()
+  $('.filterbutton').css("background-color", "#f1f1f1")
+}
+
 var Filter300Plus = function(){ //negative filter, eliminates cards not matching filter
   $('.classcard').show() //disables multifilter by showing all currently hidden classcards
   $('.lessthan300').hide() //hides everything not matching filter
