@@ -39,7 +39,7 @@
     <a id=uk_core onclick="CoreIconSwap()" href="#">UK Core <img src="Images/add.png" class="core_icon iconclue"></a>
     <ul id="core_list" class="start_hidden" style="list-style-type:none"> <!--Collapsible jquery -->
       <li><a class="" href="#" role="button">Arts & Creativity</a></li>
-      <li><a class="" href="#" role="button">Humanities</a></li>
+      <li><a class="filterbutton humanitiesbutton" onclick="FilterHumanitiesCore()" href="#" role="button">Humanities</a></li>
       <li><a class="" href="#" role="button">Social Sciences</a></li>
       <li><a class="" href="#" role="button">Composition and Communication I</a></li>
       <li><a class="" href="#" role="button">Composition and Communication II</a></li>
@@ -71,14 +71,14 @@
 
     <form class="search-container">
       <input type="text" id="search-bar" placeholder="Keyword Search...">
-      <a onclick="initiate()" href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      <a id="go_search" href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
     </form>
 
 
 
+    <div class="start_hidden" id="search_results">
 
-
-     <div class="classcard A-H101 lessthan300">
+     <div class="classcard A-H101 lessthan300 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 101 </div>
@@ -118,7 +118,7 @@
        </div>
      </div>
 
-     <div class="classcard A-H342">
+     <div class="classcard A-H342 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">A-H 342 </div>
@@ -318,7 +318,7 @@
        </div>
      </div>
 
-     <div class="classcard AAS587">
+     <div class="classcard AAS587 Humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">AAS 587 </div>
@@ -481,8 +481,8 @@
      <div class="classcard ANT330">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">ANT 330 </div>
+           <div class="col-sm-4">North American Cultures</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -521,8 +521,8 @@
      <div class="classcard BTH405">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">BTH 405 </div>
+           <div class="col-sm-4">Bioethics on Film 1.0 - 3.0</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -561,8 +561,8 @@
      <div class="classcard BTH805">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">BTH 805 </div>
+           <div class="col-sm-4">Bioethics on Film 1.0-3.0</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -601,8 +601,8 @@
      <div class="classcard CHE566">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHEv566 </div>
+           <div class="col-sm-4">Org. Mat: CHaracterization and Devices</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -641,8 +641,8 @@
      <div class="classcard CHE567">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHE 567 </div>
+           <div class="col-sm-4">Organic Materials: Fab. Lab.</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -681,8 +681,8 @@
      <div class="classcard CHI301">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHI 301 </div>
+           <div class="col-sm-4">Advanced Intermediate Chinese II</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -721,8 +721,8 @@
      <div class="classcard CHI302">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHI 302 </div>
+           <div class="col-sm-4">Advanced Intermediate Chinese II</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -761,8 +761,8 @@
      <div class="classcard CHI321">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHI 321 </div>
+           <div class="col-sm-4">Intro to Contemporary Chinese Film</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -798,11 +798,11 @@
        </div>
      </div>
 
-     <div class="classcard CHI430">
+     <div class="classcard CHI430 humanities">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CHI 430 </div>
+           <div class="col-sm-4">Popular Culture in Modern China</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -841,8 +841,8 @@
      <div class="classcard CLA100 lessthan300">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CLA 100 </div>
+           <div class="col-sm-4">Ancient Stories in Modern Films</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -881,8 +881,8 @@
      <div class="classcard CLD670">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">CLD 670 </div>
+           <div class="col-sm-4">Community Engagement</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -921,8 +921,8 @@
      <div class="classcard COM312">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">COM 312</div>
+           <div class="col-sm-4">Intercultural Communication in the Media</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -961,8 +961,8 @@
      <div class="classcard COM316">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">COM 316 </div>
+           <div class="col-sm-4">Emergency and Disaster Communication</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1078,7 +1078,7 @@
        </div>
      </div>
 
-     <div class="classcard CPH309">
+     <div class="classcard CPH309 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">CPH309 </div>
@@ -1358,7 +1358,7 @@
        </div>
      </div>
 
-     <div class="classcard ENG280 lessthan300">
+     <div class="classcard ENG280 lessthan300 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">ENG280 </div>
@@ -1558,7 +1558,7 @@
        </div>
      </div>
 
-     <div class="classcard FR103 lessthan300">
+     <div class="classcard FR103 lessthan300 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">FR103 </div>
@@ -1598,7 +1598,7 @@
        </div>
      </div>
 
-     <div class="classcard FR225 lessthan300">
+     <div class="classcard FR225 lessthan300 humanities">
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">FR225</div>
@@ -1642,7 +1642,7 @@
        <div class="asshole">
          <div class="row">
            <div class="col-sm-4">FR335 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">War, Literature, Film</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1681,8 +1681,8 @@
      <div class="classcard GER104 lessthan300">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">GER 104 </div>
+           <div class="col-sm-4">Turning Points: (sr)</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1718,11 +1718,11 @@
        </div>
      </div>
 
-     <div class="classcard GER305">
+     <div class="classcard GER305 humanities">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">GER 305 </div>
+           <div class="col-sm-4">German Film Today</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1761,8 +1761,8 @@
      <div class="classcard GRN250 lessthan300">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">GRN 250 </div>
+           <div class="col-sm-4">Aging in Today's World</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1798,11 +1798,11 @@
        </div>
      </div>
 
-     <div class="classcard GWS309">
+     <div class="classcard GWS309 humanities">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">GWS 309 </div>
+           <div class="col-sm-4">Health, History, and Human Diversity</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1841,8 +1841,8 @@
      <div class="classcard HIS587">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">HIS 587 </div>
+           <div class="col-sm-4">Civil Rights Movement in US since 1930</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1881,8 +1881,8 @@
      <div class="classcard HON151 lessthan300">
        <div class="asshole">
          <div class="row">
-           <div class="col-sm-4">A-H 101 </div>
-           <div class="col-sm-4">Introduction to Visual Studies</div>
+           <div class="col-sm-4">HON 151 </div>
+           <div class="col-sm-4">Honors in Humanities (sr)</div>
            <div class="col-sm-4">3.0 credits</div>
          </div>
 
@@ -1918,7 +1918,7 @@
        </div>
      </div>
 
-
+   </div>
 
 
 

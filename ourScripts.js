@@ -1,6 +1,12 @@
 
 
 $(document).ready(function(){
+  $("#go_search").click(function(){
+    $("#search_results").toggle();
+  });
+});
+
+$(document).ready(function(){
   $("#uk_core").click(function(){
     $("#core_list").toggle();
   });
@@ -25,6 +31,13 @@ var FilterSavsDept = function(){ //positive filter, includes cards matching filt
   $('.SAVS').show()
   $('.filterbutton').css("background-color", "#f1f1f1") //clears button background colors
   $('.SAVSbutton').css("background-color", "#0032a0") //adds UK blue background to current filter
+}
+
+var FilterHumanitiesCore = function(){
+  $('.classcard').hide()
+  $('.humanities').show()
+  $('.filterbutton').css("background-color", "#f1f1f1") //clears button background colors
+  $('.humanitiesbutton').css("background-color", "#0032a0") //adds UK blue background to current filter
 }
 
 var DeptIconSwap = function(){
