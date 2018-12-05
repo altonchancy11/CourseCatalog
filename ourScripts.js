@@ -32,6 +32,15 @@ var DeptIconSwap = function(){
     $(".dept_icon").attr('src','Images/subtract.png');
   }
   else {
-      $(".dept_icon").attr('src','Images/add.png');
+    $(".dept_icon").attr('src','Images/add.png');
+  }
+}
+
+var CoreIconSwap = function(){
+  if ($(".core_icon").attr('src') == 'Images/add.png'){
+    $(".core_icon").attr('src','Images/subtract.png');
+  }
+  else {
+    $(".core_icon").attr('src','Images/add.png');
   }
 }
