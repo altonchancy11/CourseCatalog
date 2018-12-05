@@ -26,3 +26,12 @@ var FilterSavsDept = function(){ //positive filter, includes cards matching filt
   $('.filterbutton').css("background-color", "#f1f1f1") //clears button background colors
   $('.SAVSbutton').css("background-color", "#0032a0") //adds UK blue background to current filter
 }
+
+var DeptIconSwap = function(){
+  if ($(".dept_icon").attr('src') == 'Images/add.png'){
+    $(".dept_icon").attr('src','Images/subtract.png');
+  }
+  else {
+      $(".dept_icon").attr('src','Images/add.png');
+  }
+}
