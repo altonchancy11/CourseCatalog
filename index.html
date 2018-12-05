@@ -10,7 +10,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin|Mukta|Poppins|Raleway|Text+Me+One" rel="stylesheet">
+
+
   <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script>
+  $(document).ready(function(){
+    $("#uk_core").click(function(){
+      $("#core_list").toggle();
+    });
+  });
+  </script>
 
 </head>
 <body>
@@ -22,7 +35,20 @@
     <a href="#">Department</a>
     <a href="#">Major</a>
     <a href="#">Minor</a>
-    <a href="#">UK Core</a>
+
+<!--Collapsible jquery -->
+
+  <a id=uk_core href="#">UK Core</a>
+  <ul id="core_list" class="start_hidden" style="list-style-type:none">
+    <li>Arts & Creativity</li>
+    <li>Humanities</li>
+    <li>Social Sciences</li>
+    <li> Composition and Communication I</li>
+    <li>Composition and Communication II</li>
+    <li>Quantitative Foundations</li>
+  </ul>
+
+
     <a href="#">300+ Level</a>
     <a href="#">What's New</a>
     <a href="#">Variable Credit</a>
